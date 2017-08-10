@@ -1,0 +1,23 @@
+﻿.Catalog {
+    background-color: #dae3f3;
+    border: solid 1px black;
+    position:relative;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    float:left;
+
+}
+
+.Catalog .ProductItem {
+        width: 33%;
+        height: 75px;
+        margin: auto;
+        border: 1px solid green;
+    }
+
+.Catalog img {
+    width: 30px; 
+    height: 30px;
+    border: 1px solid green;
+}
