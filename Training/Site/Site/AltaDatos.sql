@@ -36,3 +36,6 @@ insert into Products Values ('Sable convencional','marca china', 'X0006', 1300, 
 insert into Products Values ('Tenis Lodres', 'marca Adidas', 'X0007', $3000,'telo',2,1)
 
 insert into Products values('Tenis Atenas', 'marca Nike', 'X0008', 2400, 'teat', 2,1);
+
+
+select * from Products where Price >= 100
