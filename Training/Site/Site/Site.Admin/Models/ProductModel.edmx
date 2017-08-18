@@ -139,7 +139,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="ProductsCatalogEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ProductsCatalogEntities4" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Categories" EntityType="Self.Category" />
           <EntitySet Name="ProductImages" EntityType="Self.ProductImage" />
           <EntitySet Name="Products" EntityType="Self.Product" />
@@ -157,7 +157,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ProductsCatalogModelStoreContainer" CdmEntityContainer="ProductsCatalogEntities1">
+        <EntityContainerMapping StorageEntityContainer="ProductsCatalogModelStoreContainer" CdmEntityContainer="ProductsCatalogEntities4">
           <EntitySetMapping Name="Categories">
             <EntityTypeMapping TypeName="ProductsCatalogModel.Category">
               <MappingFragment StoreEntitySet="Category">

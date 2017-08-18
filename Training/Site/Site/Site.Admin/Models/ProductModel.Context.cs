@@ -13,10 +13,10 @@ namespace Site.Admin.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ProductsCatalogEntities3 : DbContext
+    public partial class ProductsCatalogEntities4 : DbContext
     {
-        public ProductsCatalogEntities3()
-            : base("name=ProductsCatalogEntities3")
+        public ProductsCatalogEntities4()
+            : base("name=ProductsCatalogEntities4")
         {
         }
     
