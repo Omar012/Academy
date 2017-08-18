@@ -18,24 +18,26 @@ function FindMyProduct(id) {
 
 //Dynamic build your collection
 function buildMyProduct(product) {
-    var html = "";
-    html += "<div>" + product.title + "</div>";
+    var html = "<div class='row'><div class='col-xs-12'>";
+    html += "<div>" + product + "</div>";
+    html += "<div class='row'><div class='col-xs-12 col-md-4 thumb-main'><div class='main-prod-img'>";
     html += "<div><img class='Catalog MainImage' src='" + product.MainImage + "' /></div>";
 
     html += "<div>" + product.description + "</div>";
     html += "<div>" + product.model + "</div>";
     html += "<div>" + product.price + "</div>";
+
     $.each(product.ProductImages, function (element, image) {
         html += "<div id='ImageContainer'>Images:<ul>";
         html += "<li><img class='Thumb' src='" + image.imgUrl + "' /></li></ul>";
     });
 
+    html += "</div><div class='product-text'><p class='p-model'>";
+    html += "Model: " + myProduct.model + "</p><p class='p-price'>Price: $" + myProduct.price;
+    html += "</p></div></div><div class='col-xs-12 col-md-6'><div class='product-description'>";
+    html += "<p style='text-align: justify;'>" + myProduct.description + "</p></div></div>";
 
-
-    //html += "<div><img class='Catalog' src='" + myProduct.imgUrl + "' /></div>";
-    //html += "<div>" + myProduct.description + "</div></div>";
-
-    $("#MyDynamicProductDetail").append(html);
+    $("#prueba2").append(html);
 }
 
 function getJsonFromUrl() {

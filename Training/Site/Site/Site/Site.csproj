@@ -102,6 +102,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Catalog2.html" />
     <Content Include="Detail.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

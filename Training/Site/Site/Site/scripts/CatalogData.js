@@ -1,4 +1,4 @@
-﻿//Your jSON Object
+﻿    //Your jSON Object
 var MyCatalogData = {
     "Product1":
     {
